@@ -1,27 +1,27 @@
-# HybridWeatherFE
+# HybridBooks FE
+Frontend solution made with Angular for using data from [HybridWeather Backend](https://github.com/Janje12/hybridweather-be). The application process the data from the Backend API and presents it in a user friendly manner.  
 
-This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 12.0.4.
+## How to run ▶️
 
-## Development server
+Just go into the /docs folder and open index.html (remember you have to have the backend running first)! =)
 
-Run `ng serve` for a dev server. Navigate to `http://localhost:4200/`. The app will automatically reload if you change any of the source files.
+## Functions & Design ⚙️ ✏️
 
-## Code scaffolding
+:white_check_mark: UI friendly design  
+✅ Responsive design  
+:white_check_mark: Search function by city name and with/without country code  
+:white_check_mark: Filter function for choosing the days you want the temperature average to be shown  
+:white_check_mark: Background gradient which dynamically updates with the average temperature of the current search  
+:white_check_mark: Animations ✨  
 
-Run `ng generate component component-name` to generate a new component. You can also use `ng generate directive|pipe|service|class|guard|interface|enum|module`.
+## TODO 📚
 
-## Build
-
-Run `ng build` to build the project. The build artifacts will be stored in the `dist/` directory.
-
-## Running unit tests
-
-Run `ng test` to execute the unit tests via [Karma](https://karma-runner.github.io).
-
-## Running end-to-end tests
-
-Run `ng e2e` to execute the end-to-end tests via a platform of your choice. To use this command, you need to first add a package that implements end-to-end testing capabilities.
-
-## Further help
-
-To get more help on the Angular CLI use `ng help` or go check out the [Angular CLI Overview and Command Reference](https://angular.io/cli) page.
+📋 Add Validation/Error handling for the search function  
+📋 Improve on the mobile design of the app  
+📋 Add city-details as a card to show more information on the selected city  
+📋 Add daily-weather-details to show the average temperature for the next five of days of selected cities  
+📋 Animate/Dynamiaclly update the weather icon left of the input to show the current weather  
+📋 Make a country flag interface for dynamically handling country icon codes for each country  
+📋 Remove uneeded modules/pacakages, css  
+📋 Refactor CSS  
+📋 Add predefined types, so no 'any' data is passed around for cleaner code  
