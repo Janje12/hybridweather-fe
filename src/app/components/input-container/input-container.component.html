@@ -1,0 +1,33 @@
+<div class="card">
+  <div class="card-body">
+    <div class="row">
+      <div class="col-2 d-sm-inline d-none d-flex justify-content-center"><img class="ms-2" src="assets/static/cloudy-day-2.svg"></div>
+      <div class="col h-100 my-auto">
+        <div class="input-group">
+          <div *ngFor="let flag of flags" class="flag-container d-sm-inline d-none ">
+            <span class="input-group-text h-100" *ngIf="flag.name === selectedCountry"
+                  style="background-color: revert !important; width: 4rem !important; max-width: 4rem !important;">
+            <span class="flag-icon" [class]="'flag-icon-' + flag.icon"></span></span>
+          </div>
+          <select [(ngModel)]="selectedCountry" class="form-control" (ngModelChange)="updateCities()">
+            <option value="" selected disabled hidden>Select a country</option>
+            <option value="">Any country</option>
+            <option [value]="country" *ngFor="let country of countries$ | async">
+              {{country}}
+            </option>
+          </select>
+        </div>
+      </div>
+      <div class="col-6 mx-0 my-auto">
+        <ng-select #citySelect [openOnEnter]="false" (keydown.enter)="search()" [maxSelectedItems]="3" [(ngModel)]="selectedCities" bindLabel="name" class="custom" [multiple]="true" bindValue="id">
+          <ng-option *ngFor="let city of showCities$ | async" [value]="city.id">{{city.name}}</ng-option>
+        </ng-select>
+      </div>
+      <div class="col-2 d-flex justify-content-end h-100 my-auto">
+        <button class="btn" (click)="search()"><i class="fa fa-search"></i></button>
+      </div>
+    </div>
+
+  </div>
+</div>
+

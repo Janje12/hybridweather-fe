@@ -1,0 +1,7 @@
+<div class="container-fluid col-8 mt-2 mx-auto">
+  <div class="row cards" *ngIf="showList">
+    <div class="col-lg-4 col-8 my-2 mx-auto" *ngFor="let a of average | keyvalue">
+      <app-city [city]="getCity(a.value)" [avgTmp]="a.key"></app-city>
+    </div>
+  </div>
+</div>

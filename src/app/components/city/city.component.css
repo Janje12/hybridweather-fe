@@ -1,0 +1,12 @@
+.weather-card-background {
+  bottom: 100%;
+  position: relative;
+  height: 100%;
+  background-color: lightgrey;
+  opacity: 0.1;
+  cursor: pointer;
+  border-radius: 2rem;
+}
+.weather-card-background:hover {
+  opacity: 0.3;
+}

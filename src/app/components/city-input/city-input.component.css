@@ -1,0 +1,6 @@
+/*
+TODO Fix so \f002 (search-icon) shows on input!
+.custom ::ng-deep .ng-placeholder::before{
+  font-family: "Font Awesome 5 Free"; font-weight: 400; content: "\f002";
+}
+*/

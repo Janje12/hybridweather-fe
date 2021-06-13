@@ -1,0 +1,37 @@
+.input-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: row;
+}
+.flag-container {
+  animation: slide-in 1.5s;
+}
+@keyframes slide-in {
+  from {
+    transform: translateX(-15rem);
+    opacity: 0;
+  }
+  to {
+    transform: translateX(0);
+    opacity: 1;
+  }
+}
+.flag-icon {
+  animation: fade-in 1s;
+}
+@keyframes fade-in {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
+/*
+TODO Fix so \f002 (search-icon) shows on input!
+.custom ::ng-deep .ng-placeholder::before{
+  font-family: "Font Awesome 5 Free"; font-weight: 400; content: "\f002";
+}
+*/
