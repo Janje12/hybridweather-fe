@@ -36,6 +36,8 @@ export class CityListComponent implements OnInit {
       this.average = u;
       this.showList = true;
       this.loading.emit(false);
+    }, error => {
+      this.loading.emit(false);
     });
   }
 

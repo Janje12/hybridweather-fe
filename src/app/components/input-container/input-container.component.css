@@ -4,6 +4,10 @@
   align-items: center;
   flex-direction: row;
 }
+.card {
+  width: 100%;
+  min-width: 50vw;
+}
 .flag-container {
   animation: slide-in 1.5s;
 }
