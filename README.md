@@ -3,7 +3,7 @@ Frontend solution made with Angular for using data from [HybridWeather Backend](
 
 ## How to run ▶️
 
-Just go into the /docs folder and open index.html! =)
+Just go into the /docs folder and open index.html (remember you have to have the backend running first)! =)
 
 ## Functions & Design ⚙️ ✏️
 
